@@ -25,12 +25,17 @@ RETURN VALUE
 */
 #include"libft.h"
 
+
+
+
+
 void	ft_bzero(void *s, size_t n)
 {
-	ft_memset(s, '\0', n);
+	ft_memset(s,0,n);
 }
 
-int main( void )
+/*     
+int main()
   {
     char b[10];
 
@@ -39,3 +44,7 @@ int main( void )
 	printf("%s",b);
     return (0);
   }
+
+
+*/
+
