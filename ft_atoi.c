@@ -36,26 +36,26 @@ int		ft_atoi(const char *s)
 		n = n * 10 + s[i] - '0';
 
 
-		//if (n > 9223372036854775807)
-		//	return ((sign > 0) ? -1 : 0);
+		if (n > 9223372036854775807)
+			return ((sign > 0) ? -1 : 0);
 		i++;
 	}
 	return (n * sign);
 }
-/*
+
 int main(int ac, char **av)
 {
 	int  mine ;
-	int theirs ; 
+	int theirs ;
 if (ac == 2)
 {
 
 	mine = ft_atoi(av[1]);
 	theirs = atoi(av[1]);
-	printf("mine : %d theirs : %d \n",mine,theirs);
+	printf("mine : %d theirUs : %d \n",mine,theirs);
 }
 return(0);
 
 
 }
-*/
+

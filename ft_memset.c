@@ -40,7 +40,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (ret);
 }
 
-/*
+
 int main()
 {
     char str[50] = "12345678910";
@@ -52,4 +52,3 @@ int main()
     printf("After memset():  %s", str);
     return 0;
 }
-*/

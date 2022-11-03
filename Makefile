@@ -20,7 +20,8 @@ $(NAME): $(OBJECTS)
 	$(AR) -r $@ $?
 
 bonus: $(OBJECTS) $(BOBJECTS)
-	$(AR) -r $(NAME) $?
+	$(AR) -r $(NAME) $? 
+#rcs
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) $?
