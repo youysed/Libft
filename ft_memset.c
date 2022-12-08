@@ -6,7 +6,7 @@
 /*   By: yel-hila <yel-hila@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 18:39:57 by yel-hila          #+#    #+#             */
-/*   Updated: 2022/10/28 18:39:57 by yel-hila         ###   ########.fr       */
+/*   Updated: 2022/12/08 16:08:06 by yel-hila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,19 +36,31 @@ void	*ft_memset(void *b, int c, size_t len)
 
 	ret = b;
 	while (len--)
-		*(char *)b++ = (unsigned char)c;
+		*(unsigned char *)b++ = (unsigned char)c;
 	return (ret);
 }
 
 
-int main()
-{
-    char str[50] = "12345678910";
-    printf("\nBefore memset(): %s\n", str);
+// int main()
+// {
+//     char str[50] = "12345678910";
+//     printf("\nBefore memset(): %s\n", str);
   
-    // Fill 2 characters starting from str[1] with '.'
-    ft_memset(str+1,'#', 2*sizeof(char));
+//     // Fill 2 characters starting from str[1] with '.'
+//     ft_memset(str+1,'#', 2*sizeof(char));
   
-    printf("After memset():  %s", str);
-    return 0;
-}
+//     printf("After memset():  %s", str);
+//     return 0;
+// }
+
+// int main()
+// {
+//        int i = 1254;
+//        ft_memset(&i,230,1);
+//        ft_memset(&i,4,2);
+// }
+
+// 00000000 00000000 00000100 00000100 
+
+// 00000100 11100110 
+// 4          230

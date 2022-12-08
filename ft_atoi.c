@@ -6,7 +6,7 @@
 /*   By: yel-hila <yel-hila@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 18:42:02 by yel-hila          #+#    #+#             */
-/*   Updated: 2022/10/28 18:42:02 by yel-hila         ###   ########.fr       */
+/*   Updated: 2022/12/08 15:07:41 by yel-hila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,19 +43,19 @@ int		ft_atoi(const char *s)
 	return (n * sign);
 }
 
-int main(int ac, char **av)
-{
-	int  mine ;
-	int theirs ;
-if (ac == 2)
-{
+// int main(int ac, char **av)
+// {
+// 	int  mine ;
+// 	int theirs ;
+// if (ac == 2)
+// {
 
-	mine = ft_atoi(av[1]);
-	theirs = atoi(av[1]);
-	printf("mine : %d theirUs : %d \n",mine,theirs);
-}
-return(0);
+// 	mine = ft_atoi(av[1]);
+// 	theirs = atoi(av[1]);
+// 	printf("mine : %d theirUs : %d \n",mine,theirs);
+// }
+// return(0);
 
 
-}
+// }
 

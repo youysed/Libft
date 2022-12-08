@@ -6,7 +6,7 @@
 /*   By: yel-hila <yel-hila@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 18:39:08 by yel-hila          #+#    #+#             */
-/*   Updated: 2022/10/28 18:39:08 by yel-hila         ###   ########.fr       */
+/*   Updated: 2022/12/08 15:40:54 by yel-hila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
-	if (!s)
+	if (!s || !f)
 		return ;
 	i = 0;
 	while (s[i])
